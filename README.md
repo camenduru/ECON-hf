@@ -9,5 +9,5 @@ sdk_version: 3.27.0
 app_file: app.py
 pinned: true
 python_version: 3.8.15
-arxiv: 2212.07422
+paper: https://arxiv.org/abs/2212.07422
 ---
