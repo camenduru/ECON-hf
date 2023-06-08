@@ -6,15 +6,6 @@ import os
 
 import subprocess
 
-if os.getenv('SYSTEM') == 'spaces':
-    # subprocess.run('pip install pyembree'.split())
-    # subprocess.run(
-    #     'pip install --no-index --no-cache-dir pytorch3d -f https://dl.fbaipublicfiles.com/pytorch3d/packaging/wheels/py38_cu116_pyt1130/download.html'
-    #     .split()
-    # )
-    subprocess.run("python setup.py build_ext --inplace".split(), cwd="./lib/common/libmesh/")
-    subprocess.run("python setup.py build_ext --inplace".split(), cwd="./lib/common/libvoxelize/")
-
 from apps.infer import generate_model, generate_video
 
 # running
@@ -88,7 +79,6 @@ description = '''
 </details>
 
 <center>
-<a href="https://huggingface.co/spaces/Yuliang/ECON?duplicate=true"><img src="https://huggingface.co/datasets/huggingface/badges/raw/main/duplicate-this-space-lg-dark.svg"/></a>
 <h2> Generate pose & prompt-guided images / Upload photos /  Use examples &rarr; Submit Image (~3min) &rarr; Generate Video (~3min) </h2>
 </center>
 '''
