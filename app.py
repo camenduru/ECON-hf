@@ -8,10 +8,10 @@ import subprocess
 
 if os.getenv('SYSTEM') == 'spaces':
     # subprocess.run('pip install pyembree'.split())
-    subprocess.run(
-        'pip install --no-index --no-cache-dir pytorch3d -f https://dl.fbaipublicfiles.com/pytorch3d/packaging/wheels/py38_cu116_pyt1130/download.html'
-        .split()
-    )
+    # subprocess.run(
+    #     'pip install --no-index --no-cache-dir pytorch3d -f https://dl.fbaipublicfiles.com/pytorch3d/packaging/wheels/py38_cu116_pyt1130/download.html'
+    #     .split()
+    # )
     subprocess.run("python setup.py build_ext --inplace".split(), cwd="./lib/common/libmesh/")
     subprocess.run("python setup.py build_ext --inplace".split(), cwd="./lib/common/libvoxelize/")
 
