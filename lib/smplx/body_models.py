@@ -1019,7 +1019,7 @@ class SMPLX(SMPLH):
 
         model_fn = "SMPLX_{}.{ext}".format(gender.upper(), ext=ext)
         smplx_path = hf_hub_download(
-            repo_id=model_path, use_auth_token=os.environ["ICON"], filename=f"models/{model_fn}"
+            repo_id=model_path,  filename=f"models/{model_fn}"
         )
 
         if ext == "pkl":

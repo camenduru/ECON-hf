@@ -92,7 +92,7 @@ def generate_model(in_path, fitting_step=50):
     normal_net = Normal.load_from_checkpoint(
         cfg=cfg,
         checkpoint_path=hf_hub_download(
-            repo_id="Yuliang/ICON", use_auth_token=os.environ["ICON"], filename=cfg.normal_path
+            repo_id="camenduru/pytorch3d", filename=cfg.normal_path
         ),
         map_location=device,
         strict=False
@@ -121,7 +121,7 @@ def generate_model(in_path, fitting_step=50):
         ifnet = IFGeo.load_from_checkpoint(
             cfg=cfg,
             checkpoint_path=hf_hub_download(
-                repo_id="Yuliang/ICON", use_auth_token=os.environ["ICON"], filename=cfg.ifnet_path
+                repo_id="camenduru/pytorch3d", filename=cfg.ifnet_path
             ),
             map_location=device,
             strict=False

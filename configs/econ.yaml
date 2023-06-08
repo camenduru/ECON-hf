@@ -1,7 +1,7 @@
 name: econ
 ckpt_dir: "./data/ckpt/"
-normal_path: "normal.ckpt"
-ifnet_path: "ifnet.ckpt"
+normal_path: "ckpt/normal.ckpt"
+ifnet_path: "ckpt/ifnet.ckpt"
 results_path: "./results"
 
 net:
