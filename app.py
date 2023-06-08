@@ -337,4 +337,4 @@ with gr.Blocks() as demo:
 if __name__ == "__main__":
 
     demo.queue(concurrency_count=1)
-    demo.launch(debug=True, enable_queue=True)
+    demo.launch(debug=True, enable_queue=True, share=True)
