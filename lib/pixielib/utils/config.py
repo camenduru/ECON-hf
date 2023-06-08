@@ -15,7 +15,7 @@ cfg.pixie_dir = abs_pixie_dir
 cfg.device = "cuda"
 cfg.device_id = "0"
 cfg.pretrained_modelpath = hf_hub_download(
-    repo_id="camenduru/pytorch3d", filename="pixie_model.tar", use_auth_token=os.environ["ICON"]
+    repo_id="camenduru/pytorch3d", filename="pixie_model.tar"
 )
 # smplx parameter settings
 cfg.params = CN()
