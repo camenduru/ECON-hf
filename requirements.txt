@@ -31,4 +31,4 @@ triton
 git+https://github.com/camenduru/rembg.git
 git+https://github.com/huggingface/diffusers.git
 git+https://github.com/huggingface/accelerate.git
-https://huggingface.co/camenduru/pytorch3d/resolve/main/pytorch3d-0.7.2-cp310-cp310-linux_x86_64.whl
+https://huggingface.co/lilpotat/pytorch3d/resolve/main/pytorch3d-0.7.2-cp310-cp310-linux_x86_64.whl

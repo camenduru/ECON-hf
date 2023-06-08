@@ -45,54 +45,54 @@ class SMPLX:
     def __init__(self):
 
         self.smpl_verts_path = hf_hub_download(
-            repo_id="camenduru/pytorch3d",
+            repo_id="lilpotat/pytorch3d",
             
             filename="smpl_data/smpl_verts.npy"
         )
         self.smpl_faces_path = hf_hub_download(
-            repo_id="camenduru/pytorch3d",
+            repo_id="lilpotat/pytorch3d",
             
             filename="smpl_data/smpl_faces.npy"
         )
         self.smplx_verts_path = hf_hub_download(
-            repo_id="camenduru/pytorch3d",
+            repo_id="lilpotat/pytorch3d",
             
             filename="smpl_data/smplx_verts.npy"
         )
         self.smplx_faces_path = hf_hub_download(
-            repo_id="camenduru/pytorch3d",
+            repo_id="lilpotat/pytorch3d",
             
             filename="smpl_data/smplx_faces.npy"
         )
         self.cmap_vert_path = hf_hub_download(
-            repo_id="camenduru/pytorch3d",
+            repo_id="lilpotat/pytorch3d",
             
             filename="smpl_data/smplx_cmap.npy"
         )
 
         self.smplx_to_smplx_path = hf_hub_download(
-            repo_id="camenduru/pytorch3d",
+            repo_id="lilpotat/pytorch3d",
             
             filename="smpl_data/smplx_to_smpl.pkl"
         )
 
         self.smplx_eyeball_fid_path = hf_hub_download(
-            repo_id="camenduru/pytorch3d",
+            repo_id="lilpotat/pytorch3d",
             
             filename="smpl_data/eyeball_fid.npy"
         )
         self.smplx_fill_mouth_fid_path = hf_hub_download(
-            repo_id="camenduru/pytorch3d",
+            repo_id="lilpotat/pytorch3d",
             
             filename="smpl_data/fill_mouth_fid.npy"
         )
         self.smplx_flame_vid_path = hf_hub_download(
-            repo_id="camenduru/pytorch3d",
+            repo_id="lilpotat/pytorch3d",
             
             filename="smpl_data/FLAME_SMPLX_vertex_ids.npy"
         )
         self.smplx_mano_vid_path = hf_hub_download(
-            repo_id="camenduru/pytorch3d",
+            repo_id="lilpotat/pytorch3d",
             
             filename="smpl_data/MANO_SMPLX_vertex_ids.pkl"
         )
@@ -100,12 +100,12 @@ class SMPLX:
             osp.dirname(__file__), "../../lib/common/smpl_vert_segmentation.json"
         )
         self.front_flame_path = hf_hub_download(
-            repo_id="camenduru/pytorch3d",
+            repo_id="lilpotat/pytorch3d",
             
             filename="smpl_data/FLAME_face_mask_ids.npy"
         )
         self.smplx_vertex_lmkid_path = hf_hub_download(
-            repo_id="camenduru/pytorch3d",
+            repo_id="lilpotat/pytorch3d",
             
             filename="smpl_data/smplx_vertex_lmkid.npy"
         )
@@ -192,7 +192,7 @@ class SMPLX:
 model_init_params = dict(
     gender="male",
     model_type="smplx",
-    model_path="camenduru/pytorch3d",
+    model_path="lilpotat/pytorch3d",
     create_global_orient=False,
     create_body_pose=False,
     create_betas=False,

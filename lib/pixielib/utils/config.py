@@ -15,7 +15,7 @@ cfg.pixie_dir = abs_pixie_dir
 cfg.device = "cuda"
 cfg.device_id = "0"
 cfg.pretrained_modelpath = hf_hub_download(
-    repo_id="camenduru/pytorch3d", filename="pixie_model.tar"
+    repo_id="lilpotat/pytorch3d", filename="pixie_model.tar"
 )
 # smplx parameter settings
 cfg.params = CN()
@@ -33,44 +33,44 @@ cfg.params.hand_share_list = [
 # ---------------------------------------------------------------------------- #
 cfg.model = CN()
 cfg.model.topology_path = hf_hub_download(
-    repo_id="camenduru/pytorch3d",
+    repo_id="lilpotat/pytorch3d",
     
     filename="SMPL_X_template_FLAME_uv.obj"
 )
 cfg.model.topology_smplxtex_path = hf_hub_download(
-    repo_id="camenduru/pytorch3d",  filename="smplx_tex.obj"
+    repo_id="lilpotat/pytorch3d",  filename="smplx_tex.obj"
 )
 cfg.model.topology_smplx_hand_path = hf_hub_download(
-    repo_id="camenduru/pytorch3d",  filename="smplx_hand.obj"
+    repo_id="lilpotat/pytorch3d",  filename="smplx_hand.obj"
 )
 cfg.model.smplx_model_path = hf_hub_download(
-    repo_id="camenduru/pytorch3d",  filename="SMPLX_NEUTRAL_2020.npz"
+    repo_id="lilpotat/pytorch3d",  filename="SMPLX_NEUTRAL_2020.npz"
 )
 cfg.model.face_mask_path = hf_hub_download(
-    repo_id="camenduru/pytorch3d",  filename="uv_face_mask.png"
+    repo_id="lilpotat/pytorch3d",  filename="uv_face_mask.png"
 )
 cfg.model.face_eye_mask_path = hf_hub_download(
-    repo_id="camenduru/pytorch3d",  filename="uv_face_eye_mask.png"
+    repo_id="lilpotat/pytorch3d",  filename="uv_face_eye_mask.png"
 )
 cfg.model.extra_joint_path = hf_hub_download(
-    repo_id="camenduru/pytorch3d",  filename="smplx_extra_joints.yaml"
+    repo_id="lilpotat/pytorch3d",  filename="smplx_extra_joints.yaml"
 )
 cfg.model.j14_regressor_path = hf_hub_download(
-    repo_id="camenduru/pytorch3d",  filename="SMPLX_to_J14.pkl"
+    repo_id="lilpotat/pytorch3d",  filename="SMPLX_to_J14.pkl"
 )
 cfg.model.flame2smplx_cached_path = hf_hub_download(
-    repo_id="camenduru/pytorch3d",  filename="flame2smplx_tex_1024.npy"
+    repo_id="lilpotat/pytorch3d",  filename="flame2smplx_tex_1024.npy"
 )
 cfg.model.smplx_tex_path = hf_hub_download(
-    repo_id="camenduru/pytorch3d",  filename="smplx_tex.png"
+    repo_id="lilpotat/pytorch3d",  filename="smplx_tex.png"
 )
 cfg.model.mano_ids_path = hf_hub_download(
-    repo_id="camenduru/pytorch3d",
+    repo_id="lilpotat/pytorch3d",
     
     filename="MANO_SMPLX_vertex_ids.pkl"
 )
 cfg.model.flame_ids_path = hf_hub_download(
-    repo_id="camenduru/pytorch3d",
+    repo_id="lilpotat/pytorch3d",
     
     filename="SMPL-X__FLAME_vertex_ids.npy"
 )
